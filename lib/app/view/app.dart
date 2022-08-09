@@ -6,6 +6,8 @@
 // https://opensource.org/licenses/MIT.
 
 import 'package:assignment_timer/l10n/l10n.dart';
+import 'package:assignment_timer/timer/view/timer_page.dart';
+import 'package:assignment_timer/timer/view/timer_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -26,9 +28,7 @@ class App extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const Scaffold(
-        body: Text('hello world'),
-      ),
+      home: const TimerView(),
     );
   }
 }
