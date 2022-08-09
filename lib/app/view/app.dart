@@ -27,7 +27,9 @@ class App extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const Scaffold(
+        body: Text('hello world'),
+      ),
     );
   }
 }
